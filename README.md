@@ -1,9 +1,9 @@
-📰 # **FAKE NEWS DETECTION — MACHINE LEARNING PROJECT**
+📰  **FAKE NEWS DETECTION — MACHINE LEARNING PROJECT**
 
 This repository contains a complete end-to-end Fake News Classification system built using Machine Learning and Natural Language Processing (NLP).
 The model learns from real-world news articles and predicts whether a given text is FAKE or REAL.
 
-📁 Project Overview
+📁 **Project Overview**
 
 This project performs the following:
 
@@ -17,7 +17,7 @@ This project performs the following:
 
 📓 Fully implemented in a single Jupyter Notebook
 
-📂 Repository Structure
+📂 **Repository Structure**
 .
 ├── FakeNewsDetection.ipynb       # Main Jupyter Notebook
 ├── data/                         # Dataset (optional)
@@ -27,7 +27,7 @@ This project performs the following:
 
 Create a data/ folder and place your dataset inside if needed.
 
-⚙️ Environment & Installation
+⚙️ **Environment & Installation**
 
 ✔️ Recommended: Python 3.8+
 
@@ -55,11 +55,11 @@ Loads a labeled dataset of news articles containing FAKE and REAL categories.
 
 ✨ Cleaning & normalizing text
 
-3. Feature Engineering
+**3. Feature Engineering**
 
 Uses TF-IDF Vectorizer to convert text into machine-understandable feature vectors.
 
-4. Model Training
+**4. Model Training**
 
 Trains classic ML classifiers such as:
 
@@ -69,7 +69,7 @@ Trains classic ML classifiers such as:
 
 ✔ Support Vector Machine (SVM)
 
-5. Evaluation Metrics
+**5. Evaluation Metrics**
 
 📈 Accuracy
 
