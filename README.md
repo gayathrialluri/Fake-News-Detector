@@ -1,4 +1,4 @@
-📰 FAKE NEWS DETECTION — MACHINE LEARNING PROJECT
+📰 # **FAKE NEWS DETECTION — MACHINE LEARNING PROJECT**
 
 This repository contains a complete end-to-end Fake News Classification system built using Machine Learning and Natural Language Processing (NLP).
 The model learns from real-world news articles and predicts whether a given text is FAKE or REAL.
