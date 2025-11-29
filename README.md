@@ -1,4 +1,4 @@
-* FAKE NEWS DETECTION USING MACHINE LEARNING
+# FAKE NEWS DETECTION USING MACHINE LEARNING
 
 This project classifies news articles as Fake or Real using TF-IDF text features and two machine-learning models — Naive Bayes and Random Forest.
 It includes full preprocessing, training, evaluation, cross-validation, and feature-importance visualization.
