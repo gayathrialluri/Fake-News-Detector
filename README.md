@@ -3,7 +3,7 @@
 This project classifies news articles as Fake or Real using TF-IDF text features and two machine-learning models — Naive Bayes and Random Forest.
 It includes full preprocessing, training, evaluation, cross-validation, and feature-importance visualization.
 
-# 📂Project Structure
+## 📂Project Structure
 
 ├─ FakeNewsDetection.ipynb
 ├─ True.csv
@@ -11,7 +11,7 @@ It includes full preprocessing, training, evaluation, cross-validation, and feat
 ├─ requirements.txt
 └─ README.md
 
-# 🧠Workflow Overview
+## 🧠Workflow Overview
 
 **1.Data Preparation**
 
@@ -42,7 +42,7 @@ Trained two ML models:
 
 • Random Forest Classifier (100 trees)
 
-# 📊Model Evaluation Metrics
+## 📊Model Evaluation Metrics
 
 1. Accuracy
 
@@ -69,7 +69,7 @@ cross_val_score(model, X_train_vec, y_train, cv=5)
 
 • Visualize as a horizontal bar plot
 
-# 🧪Results Summary
+## 🧪Results Summary
 
 • Naive Bayes Results
 
@@ -87,7 +87,7 @@ cross_val_score(model, X_train_vec, y_train, cv=5)
 
 
 
-# ▶️How to Run the Project
+## ▶️How to Run the Project
 Install dependencies
 pip install -r requirements.txt
 
@@ -96,7 +96,7 @@ jupyter notebook FakeNewsDetection.ipynb
 
 Make sure True.csv and Fake.csv are in the same directory.
 
-# 🗂️Dataset
+## 🗂️Dataset
 
 The project uses two labeled datasets:
 
