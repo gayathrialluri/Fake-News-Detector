@@ -26,8 +26,11 @@ It includes full preprocessing, training, evaluation, cross-validation, and feat
 2.Text Processing with TF-IDF
 
 • Convert text into numerical vectors
-• Remove English stopwords
+
+• Remove English stopwords  
+
 • Use max_df = 0.7 to reduce noise
+
 • Split into train/test sets (80/20)
 
 3.Machine Learning Models
@@ -35,6 +38,7 @@ It includes full preprocessing, training, evaluation, cross-validation, and feat
 Trained two ML models:
 
 • Multinomial Naive Bayes
+
 • Random Forest Classifier (100 trees)
 
 📊 **Model Evaluation Metrics**
@@ -61,16 +65,23 @@ cross_val_score(model, X_train_vec, y_train, cv=5)
 5. Feature Importance (Random Forest)
 
 • Extract top 20 TF-IDF features
+
 • Visualize as a horizontal bar plot
 
 🧪**Results Summary**
 
 • Naive Bayes Results
+
 • Random Forest Results
+
 • Accuracy for both models
+
 • Confusion Matrix
+
 • Precision / Recall / F1-Score
+
 • 5-fold CV mean accuracy
+
 • Top 20 most important TF-IDF features (Random Forest)
 
 
@@ -89,6 +100,7 @@ Make sure True.csv and Fake.csv are in the same directory.
 The project uses two labeled datasets:
 
 • True.csv → Real news
+
 • Fake.csv → Fake news
 
 These datasets contain title, text, subject, and date fields.
