@@ -14,10 +14,10 @@ It includes full preprocessing, training, evaluation, cross-validation, and feat
 🧠 **Workflow Overview**
 1.Data Preparation
 
-• Load True.csv and Fake.csv
-• Assign labels: 1 = Real, 0 = Fake
-• Shuffle and combine the datasets
-• Merge title + text into a single input field (content)
+• Load True.csv and Fake.csv␣␣
+• Assign labels: 1 = Real, 0 = Fake␣␣
+• Shuffle and combine the datasets␣␣
+• Merge title + text into a single input field (content)␣␣
 
 2.Text Processing with TF-IDF
 
