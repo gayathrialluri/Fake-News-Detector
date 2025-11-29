@@ -1,78 +1,91 @@
-📰  **FAKE NEWS DETECTION — MACHINE LEARNING PROJECT**
+**FAKE NEWS DETECTION USING MACHINE LEARNING**
 
-This repository contains a complete end-to-end Fake News Classification system built using Machine Learning and Natural Language Processing (NLP).
-The model learns from real-world news articles and predicts whether a given text is FAKE or REAL.
-
-📁 **Project Overview**
-
-This project performs the following:
-
-1. Preprocesses raw news text (cleaning, tokenizing, removing stopwords)
-
-2.Converts text into numerical vectors using TF-IDF
-
-3.Trains ML classifiers (Logistic Regression / Naive Bayes / SVM)
-
-4.Evaluates the model using accuracy, confusion matrix, and classification report
-
-5.Fully implemented in a single Jupyter Notebook
+This project classifies news articles as Fake or Real using TF-IDF text features and two machine-learning models — Naive Bayes and Random Forest.
+It includes full preprocessing, training, evaluation, cross-validation, and feature-importance visualization.
 
 📂 **Project Structure**
-.
-├── FakeNewsDetection.ipynb       # Main Jupyter Notebook
-├── data/                         # Dataset (optional)
-├── requirements.txt              # Python dependencies
-└── README.md                     # Documentation file
 
+├─ FakeNewsDetection.ipynb
+├─ True.csv
+├─ Fake.csv
+├─ requirements.txt
+└─ README.md
 
-⚙️ **Environment & Installation**
+🧠 **Workflow Overview**
+1.Data Preparation
 
-✔️ Recommended: Python 3.8+
+• Load True.csv and Fake.csv
+• Assign labels: 1 = Real, 0 = Fake
+• Shuffle and combine the datasets
+• Merge title + text into a single input field (content)
 
-1.Create a virtual environment (optional)
-python -m venv .venv
-source .venv/bin/activate         # Windows: .venv\Scripts\activate
+2.Text Processing with TF-IDF
 
-2.Install dependencies
-pip install -r requirements.txt
+• Convert text into numerical vectors
+• Remove English stopwords
+• Use max_df = 0.7 to reduce noise
+• Split into train/test sets (80/20)
 
-**Workflow / Methodology**
-1. Data Loading
-Loads a labeled dataset of news articles containing FAKE and REAL categories.
+3.Machine Learning Models
 
-2. Text Preprocessing:
+Trained two ML models:
 
-• Lowercasing
-• Removing punctuation & numbers
-• Removing stopwords
-• Lemmatization
-• Cleaning & normalizing text
+• Multinomial Naive Bayes
+• Random Forest Classifier (100 trees)
 
+📊 **Model Evaluation Metrics**
 
-**3. Feature Engineering**
+1. Accuracy
 
-Uses TF-IDF Vectorizer to convert text into machine-understandable feature vectors.
+Computed for both models using:
+accuracy_score(y_test, predictions)
 
-**4. Model Training**
+2. Confusion Matrix
+confusion_matrix(y_test, predictions)
 
-Trains classic ML classifiers such as:
-• Logistic Regression
-• Naive Bayes
-• Support Vector Machine (SVM)
+3. Precision, Recall & F1-Score
 
+Generated through:
+classification_report(y_test, predictions)
 
-**5. Evaluation Metrics**
+4. 5-Fold Cross Validation (Accuracy)
 
-• Accuracy
+Applied to both Naive Bayes and Random Forest:
+
+cross_val_score(model, X_train_vec, y_train, cv=5)
+
+5. Feature Importance (Random Forest)
+
+• Extract top 20 TF-IDF features
+• Visualize as a horizontal bar plot
+
+🧪**Results Summary**
+
+• Naive Bayes Results
+• Random Forest Results
+• Accuracy for both models
 • Confusion Matrix
 • Precision / Recall / F1-Score
-• Results
+• 5-fold CV mean accuracy
+• Top 20 most important TF-IDF features (Random Forest)
 
 
-Accuracy: e.g., 95%
 
-Precision: —
+▶️**How to Run the Project**
+Install dependencies
+pip install -r requirements.txt
 
-Recall: —
+Run the notebook
+jupyter notebook FakeNewsDetection.ipynb
 
-F1-Score: —
+Make sure True.csv and Fake.csv are in the same directory.
+
+🗂️ **Dataset**
+
+The project uses two labeled datasets:
+
+• True.csv → Real news
+• Fake.csv → Fake news
+
+These datasets contain title, text, subject, and date fields.
+
